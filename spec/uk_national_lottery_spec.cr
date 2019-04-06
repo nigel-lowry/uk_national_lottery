@@ -13,7 +13,8 @@ describe UkNationalLottery do
   end
 
   it "picks 6 unique balls" do
-
+    ld = UkNationalLottery::UkNationalLottery.new
+    ld.lucky_dip.should eq ld.lucky_dip.uniq
   end
 
   it "picks balls between 1 and 59 (inclusive)" do
