@@ -1,4 +1,4 @@
-require "./simple_kemal_app/*"
+#require "./uk_national_lottery/*"
 require "kemal"
 
 get "/" do
