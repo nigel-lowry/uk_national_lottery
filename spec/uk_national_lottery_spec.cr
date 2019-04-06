@@ -29,7 +29,10 @@ describe UkNationalLottery do
   end
 
   it "sorts the balls in ascending order" do
+    lottery = UkNationalLottery::UkNationalLottery.new
+    lucky_dip = lottery.lucky_dip
 
+    lucky_dip.should eq lucky_dip.sort
   end
 
 end
