@@ -5,7 +5,7 @@ module UkNationalLottery
   # TODO: Put your code here
   class UkNationalLottery
     def lucky_dip
-      [1, 2, 3, 4, 5, 6]
+      (1..59).to_a.sample(6)
     end
   end
 end
