@@ -1,8 +1,8 @@
-#require "./uk_national_lottery/*"
+require "./uk_national_lottery"
 require "kemal"
 
 get "/" do
-  "My first Kemal app is alive!"
+  UkNationalLottery::UkNationalLottery.new.lucky_dip.to_s
 end
 
 Kemal.run
