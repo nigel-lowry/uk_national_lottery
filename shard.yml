@@ -1,0 +1,13 @@
+name: uk_national_lottery
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  uk_national_lottery:
+    main: src/uk_national_lottery.cr
+
+crystal: 0.27.2
+
+license: MIT
