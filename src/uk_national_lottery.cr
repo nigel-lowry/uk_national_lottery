@@ -2,10 +2,13 @@
 module UkNationalLottery
   VERSION = "0.1.0"
 
-  # TODO: Put your code here
   class UkNationalLottery
     def lucky_dip
-      (1..59).to_a.sample(6).sort
+      choose_six_balls.sort
+    end
+
+    private def choose_six_balls
+      (1..59).to_a.sample(6)
     end
   end
 end
