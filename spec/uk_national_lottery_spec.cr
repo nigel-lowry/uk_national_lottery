@@ -17,8 +17,10 @@ describe UkNationalLottery do
     it "picks balls between 1 and 59 (inclusive)" do
       lottery = UkNationalLottery::UkNationalLottery.new
       lucky_dip = lottery.lucky_dip 
-      range = 1..59
-      lucky_dip.all? { |ball| range.includes? ball }.should eq true
+
+      one_to_fifty_nine_inclusive = 1..59
+
+      lucky_dip.each { |ball| one_to_fifty_nine_inclusive.should contain(ball) }
     end
 
     it "gives a different set of balls next time" do
