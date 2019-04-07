@@ -6,4 +6,4 @@ RUN shards
 
 COPY . /usr/src/app/
 
-CMD ["crystal", "run", "src/simple_kemal_app.cr", "--release"]
+CMD ["crystal", "run", "src/appviews.cr", "--release"]
