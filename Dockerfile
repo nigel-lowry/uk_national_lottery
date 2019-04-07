@@ -4,4 +4,4 @@ COPY . /usr/src/app/
 WORKDIR /usr/src/app
 RUN shards
 
-CMD ["crystal", "src/appviews.cr"]
+CMD ["crystal", "src/web_server.cr"]
